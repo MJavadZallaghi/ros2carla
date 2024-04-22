@@ -1,0 +1,14 @@
+1. Open CARLA in Whindos 11.
+
+2. in the WSL2 Ubunto 22.04, run
+    cd /home/mjavadzallaghi/carla_ws/ros2carla
+
+3. Activate the virtual environment of the CARLA (it has python 3.8, numpy, pygame)
+    source ros2carla_py_env/bin/activate
+
+4. Run the script that manipulates the CARLA simulation server on the Windows.
+    python launch_carla_on_windows.py 
+
+
+* The IP of the host Windows is private, so I'm reading it from a Note that won't be uploaded to GitHub repository. It's like 17x.xx.xx.x. Only write it donw
+    in the first line of a text file, and save the file name as carla_server_ip_file.txt. The carla api python script will find access to it.
